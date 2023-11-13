@@ -8,8 +8,8 @@ void distanceSensor(int, int, float);
 
 // laser setup
 int laserPin = 2;
-int laserOnDuration = 500;
-int laserOffDuration = 500;
+unsigned long laserTime;
+int laserDuration = 5000;
 void fireLaser(int, int);
 
 //servo 1 setup

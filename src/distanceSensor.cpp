@@ -11,4 +11,4 @@ void distanceSensor(int trigPin, int echoPin, float distance) {
   distance = (duration*.0343)/2;
   Serial.print("Distance: ");
   Serial.println(distance);
-  }
+}

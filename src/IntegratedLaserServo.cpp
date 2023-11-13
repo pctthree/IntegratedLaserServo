@@ -14,7 +14,12 @@ void loop() {
   distanceSensor(trigPin, echoPin, distance);
   if ( distance < 5) {
     Serial.println("close enough");
+    fireLaser(laserPin, 1);
+    laserTime = millis();
+    while ((millis() - laserDuration) < laserTime) {
+      //both servos
+    }
+    fireLaser(laserPin, 0);
   }
-  delay(500);
 }
 
