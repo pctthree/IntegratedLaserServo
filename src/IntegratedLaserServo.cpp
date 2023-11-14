@@ -7,6 +7,9 @@ void setup() {
   pinMode(trigPin, OUTPUT);
   pinMode(echoPin, INPUT);
   Serial.begin(9600);
+  horizontalServo.attach(2);
+  verticalServo.attach(3);
+
 }
 
 void loop() {

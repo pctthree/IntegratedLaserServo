@@ -1,4 +1,5 @@
-#include <Arduino.h>
+#include <arduino.h>
+#include <Servo.h>
 
 //distance sensor
 const int trigPin = 12; 
@@ -13,3 +14,6 @@ int laserDuration = 5000;
 void fireLaser(int, int);
 
 //servo 1 setup
+Servo horizontalServo;
+Servo verticalServo;
+void activateServo(Servo horizontalServo, Servo verticalServo);
